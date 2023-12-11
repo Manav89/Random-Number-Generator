@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="close">
+            <br>
+            <h1>Random Number Generator</h1>
+            <br>
+            <br>
+
+            <button onclick="rndm()">Generate Random Number</button>
+            <br>
+            <br>
+            <br>
+
+            <h3 id="r1"></h3>
+        </div>
+    </div>
+
+
+    <script>
+        const rndm = () => {
+
+            let rnm = (Math.random())*100;
+
+            document.getElementById('r1').innerHTML = "Random number is : " + rnm;
+        }
+    </script>
+</body>
+
+</html>
